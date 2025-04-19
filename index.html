@@ -4,58 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="lecture-13.css">
-     <!--Internal-CSS-->
-     <!--(!important to give priorty to css)-->
-    <!--<style>
-        p{
-            background-color: blueviolet;
-        }
-        h1{
-            color: forestgreen;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+<!--FlexBOx In CSS-->
+<style>
+    .container{
+        background-color: beige;
+        border: 5px solid black;
+        height: 800px;
+        margin: 2px;
+        padding: 2px;
+        display: flex;
+        /* flex-wrap: wrap; */
+        /*to make responsive without making it look baad(CONDITION- jbtk space available hai)*/
+        /* flex-wrap: wrap-reverse;  */
+        /* flex-direction: row-reverse; */
+        /* flex-direction: column-reverse; */
+        /* flex-flow: column; */
+        justify-content: start;
+        /*it changes according to MAIN-AXIS*/
+        align-items: start;
+        align-content: center;/*to avoid space between elem when its flex wrap*/
+    }
+    .box{
+        /* height: 200px; 
+        width: 200px; */
+        border: 2px solid brown;
+        margin: 4px;
+        padding: 2px;
+    }
+    #box1{
+        background-color: rgba(9, 189, 189, 0.805);
+        order: 500;/*to give order number of flex-items*/
+        /* flex-shrink: 4; */
+        /*BOx-1 will shrink faster than other boxes*/
+        /* flex-grow: 5; */
+        /*first it will take all the space inside flex*/
+        align-self: center;
+    }
+    #box2{
+        background-color: aquamarine;
+        order: 100;
+        flex-grow: 1;
+        align-self: start;
+    }
+    #box3{
+        background-color: rgb(3, 255, 255);
+        order: 50;
+        flex-grow: 1;
+    }
+    #box4{
+        background-color: blanchedalmond;
+        order: 300;
+        flex-grow: 1;
+        /* flex-basis: 400px; */
+    }
+</style>
+
 </head>
 <body>
-    <h1>Welcome to Code help</h1>
-
-    <!--Inline-CSS
-    <p style="background-color: yellow;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis voluptatibus quia sunt perspiciatis cum eos error, velit quas exercitationem dolor!</p>
-    <p style="color: rgb(13, 13, 10);">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum qui sunt amet tempora aliquam officia modi minima. Necessitatibus quam ipsum fugiat impedit iure eligendi vel ea? Facilis accusantium natus error repellendus doloremque numquam vitae quidem temporibus facere eum alias, totam ex ipsam libero quo veniam corporis adipisci dolore dolores perspiciatis!</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, quo, sequi vitae dolorem maxime molestiae molestias aliquid quos quam, ea illum optio ullam asperiores perspiciatis praesentium sed voluptatum. Dolore alias enim excepturi in! Voluptate, accusamus voluptates? Exercitationem iure vel unde facere voluptatum asperiores, qui doloribus reiciendis voluptatem dicta nulla vero iusto deleniti earum aut dolore illum ut enim consectetur blanditiis perferendis quia provident obcaecati culpa! Quas vitae possimus unde, delectus ut voluptatibus corporis eaque animi saepe ipsa obcaecati voluptates dolores quo nemo libero non modi iste laboriosam? Natus, aliquam iste temporibus repudiandae, quo eos debitis explicabo omnis consequatur, accusantium voluptatibus!</p>
-
-<footer>I am foooooter!!!!!!!!!!!!!!</footer>
--->
-
-
-<!--Element selector-->
-<style>
-    p{
-        color: brown;
-    }
-    #ABC{
-        background-color: rgb(142, 222, 136);
-    }
-    .paraclass{
-        background-color: yellow;
-    }
-    p,article{
-      width:300px;
-    }
-    p.paraclass{
-    text-align: center;
-    }
-
-</style>
-<!--Group Selector-->
-
-<h1>Wlcom to codehelp</h1>
-<!--Id selector-->
-<p class="paraclass">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste illum fugiat quas! Necessitatibus iste explicabo, possimus vero fugit voluptatum ea dolores nemo magni eos tempore, molestias quisquam pariatur minima cumque. Perspiciatis, obcaecati recusandae quibusdam molestias est sapiente dolorem nulla unde dignissimos quos debitis. Ullam voluptatum necessitatibus suscipit sed maxime hic!</p>
-
-<p class="paraclass">helooooooo</p>
-
-<p class="paraclass">welcomeeee backkkkkk guyssss!!!!!!!!!1</p>
-<article id="ABC" class="paraclass">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui nostrum minus sint, in temporibus voluptate, accusamus magni vero, ea cum accusantium. Hic cumque esse ducimus eveniet voluptatibus perferendis rem recusandae fuga rerum quia quo facere consequatur nulla animi magnam voluptates harum porro, minus nisi commodi quidem iusto ullam totam! Aliquam, dolorem! Aspernatur cum esse cumque doloribus quibusdam corporis nam iste, cupiditate dolore, laboriosam, amet quis hic tenetur nulla molestiae voluptates ut. Adipisci consequuntur nihil corporis odio hic natus reiciendis omnis aliquam? Doloremque quia necessitatibus fugit rerum inventore ducimus cum beatae sequi quae quis eaque reprehenderit magnam, quidem, aliquam perferendis iste!</article>
+    
+    <div class="container">
+        <div class="box" id="box1">BOX 1</div>
+        <div class="box" id="box2">BOX 2</div>
+        <div class="box" id="box3">BOX 3</div>
+        <div class="box" id="box4">BOX 4</div>
+    </div>
+    
 </body>
 </html>
