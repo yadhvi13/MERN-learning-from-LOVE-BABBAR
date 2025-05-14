@@ -3,73 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lecture-16</title>
+    <title>Document</title>
 
-    
-
-    
-
-<!-- 
-   <style>
-    *{
-        margin: 10px;
-        padding: 0;
-        box-sizing: border-box;/*by using this,original size of box does'nt increase when giving padding and margin*/
-    }
-    .box{
-        width: 200px;
-        height: 300px;
+<style>
+    .container{
         border: 1px solid black;
-        padding: 100px;
+        background-color: bisque;
+        display: flex;
+        flex-direction: row;
+        width: 380px;
+        margin: 10px;
+        padding: 2px;
     }
-    span{
-        border: 2px solid greenyellow;
-        width: 300px;
-        height: 200px;
-        margin: 5px;
-        padding: 30px;
-        display: inline-block;/*converting inline elem to block */
+    #boxleft{
+        background-color: aquamarine;
+        border: 1px solid blue;
+        width: 47%;
+        margin: 3px;
+        padding: 2px;
+        display: flex;
+        flex-direction: column;
     }
-    /* div{
+    #boxright{
+        background-color: yellow;
+        border: 1px solid brown;
+        width: 47%;
+        margin: 3px;
+        padding: 2px;
+    }
+    p{
         border: 1px solid red;
-        width: 200px;
-        height: 100px;
-        margin: 25px;
-        padding: 20px;
-    } */
-  </style>
+    }
+    img{
+        width: 150px;
+    }
+    @media (max-width: 640px) {
+        .container{
+            flex-direction: column;
+        }
+    }
+</style>
 
 </head>
+<body>
+    <div class="container">
+        <div id="boxleft">
+         <p>Text1</p>
+         <p>Text2</p>
+        </div>
 
-    <!- <div>
-        wlcomm to code help
+        <div id="boxright">
+         <img src="https://images.unsplash.com/photo-1745613184657-3c8dcd5f079a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        </div>
     </div>
-    <div>
-        wlcom to code help 2.0
-    </div>  -->
-
-    <!-- <div class="box">
-        wlcomm to code help
-    </div> -->
-
-    <!-- <span>This is Myyyy pagee!!!</span>
-    <span>thiss is myyyy pagee###</span> -->
-
-
-    <!--(Inline-Block)
-    custom width,height,margin,padding allows
---> 
-
-
-
-
-
-
-
-
-
-
-<!--Css position Property-->
-
 </body>
 </html>
